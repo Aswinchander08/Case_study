@@ -137,7 +137,7 @@ public class Main {
 					String lease=in.next();
 					System.out.println("Enter Lease Amount:");
 					float amount=in.nextFloat();
-					Lease l=new Lease(m+1, caid, cussid, startdate, enddate,lease);
+					Lease l=new Lease(1, caid, cussid, startdate, enddate,lease);
 					Lease a=c.createLease(l);
 					c.recordPayment(a, amount,liid);
 					
