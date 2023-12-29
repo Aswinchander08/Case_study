@@ -1,6 +1,8 @@
-package com.hexaware.dao;
+package Test;
 
 import static org.junit.jupiter.api.Assertions.*;
+import com.hexaware.dao.*;
+
 
 import java.sql.Connection;
 import java.sql.SQLException;

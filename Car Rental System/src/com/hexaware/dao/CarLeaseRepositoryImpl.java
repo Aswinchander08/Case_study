@@ -363,8 +363,10 @@ public class CarLeaseRepositoryImpl implements ICarLeaseRepository {
 			ps.setString(2, lease.getStartDate());
 			ps.setFloat(3, amount);
 			int noofrow=ps.executeUpdate();
+			System.out.println("Payment Successful");
 		}catch(SQLException | ClassNotFoundException e)
 		{
+			e.printStackTrace();
 		}
 		
 	}
