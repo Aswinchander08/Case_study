@@ -85,7 +85,7 @@ class CarLeaseRepositoryImplTest {
 		cu.setEmail("as@gmail.com");
 		cu.setPhoneNumber("9080704010");
 		try {
-			c.addCustomer(null);
+			c.addCustomer(cu);
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
