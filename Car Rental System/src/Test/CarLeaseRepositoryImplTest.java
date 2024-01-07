@@ -78,6 +78,13 @@ class CarLeaseRepositoryImplTest {
 	 void testlease()
 	 {
 		isDone=false;
+		Customer cu=new Customer();
+		cu.setCustomerID(1);
+		cu.setFirstname("Aswin");
+		cu.setLastname("Chander");
+		cu.setEmail("as@gmail.com");
+		cu.setPhoneNumber("9080704010");
+		c.addCustomer(null);
 		c.createLeasee(1,1,"2023-12-27","2023-12-31","1");
 		isDone=true;
 		assertTrue(isDone);
