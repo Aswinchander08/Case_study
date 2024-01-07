@@ -84,7 +84,15 @@ class CarLeaseRepositoryImplTest {
 		cu.setLastname("Chander");
 		cu.setEmail("as@gmail.com");
 		cu.setPhoneNumber("9080704010");
-		c.addCustomer(null);
+		try {
+			c.addCustomer(null);
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		c.createLeasee(1,1,"2023-12-27","2023-12-31","1");
 		isDone=true;
 		assertTrue(isDone);
